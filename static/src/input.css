@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+    body {
+        @apply font-sans overflow-x-hidden;
+    }
+}
+
+@layer components {
+    .gradient-bg {
+        @apply fixed inset-0 -z-10 overflow-hidden;
+    }
+
+    .floating-circle {
+        @apply absolute rounded-full opacity-20 blur-[40px];
+    }
+
+    .circle-1 {
+        @apply top-[15%] right-[20%] w-[100px] h-[100px] bg-purple-400 dark:bg-purple-800;
+    }
+
+    .circle-2 {
+        @apply bottom-[25%] left-[25%] w-[150px] h-[150px] bg-blue-400 dark:bg-blue-600;
+    }
+
+    .circle-3 {
+        @apply top-[45%] right-[30%] w-[80px] h-[80px] bg-purple-400 dark:bg-purple-800;
+    }
+} 
